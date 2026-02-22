@@ -1,13 +1,9 @@
 @import "tailwindcss";
 
-:root {
-  --background: #050507;
-  --foreground: #ececec;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  margin: 0;
-  font-family: monospace;
+@layer base {
+  body {
+    background-color: #050507;
+    color: #ececec;
+    font-family: ui-monospace, monospace;
+  }
 }
