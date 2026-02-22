@@ -1,11 +1,15 @@
-@import "tailwindcss";
-
-@theme {
-  --color-background: #050507;
-  --color-foreground: #ececec;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
+  --background: #050507;
+  --foreground: #ececec;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
